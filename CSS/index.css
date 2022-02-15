@@ -1,0 +1,218 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lato", sans-serif;
+  font-family: "Lobster", cursive;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Petemoss", cursive;
+  font-family: "Roboto Slab", serif;
+  font-family: "Titillium Web", sans-serif;
+  /* outline:2px solid red; */
+   /* overflow: hidden; */
+}
+body {
+    /* height:100vh; */
+   background:url("https://www.desktopbackground.org/download/3840x2400/2010/04/17/3405_cool-simple-white-backgrounds-picture-gallery_5120x2880_h.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed ;
+}
+a{
+ text-decoration: none !important;
+
+}
+.heads{
+  color:yellow;
+  margin-bottom: 5%;
+}
+
+
+header{
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 90vh;
+    /* width:100vw; */
+    background: linear-gradient(rgba(28, 28, 32, 0.8), rgba(20, 20, 24, 0.8)),url('images/PicsArt_12-30-04.58.50.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+   
+}
+
+
+/* navbar */
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 4em;
+  width: 100vw;
+  align-items:center;
+  position:fixed;
+  top:0;
+  
+}
+.nav-head{
+  display:flex;
+}
+#hamBurger{
+  height: 2em;
+  width: 2em;
+  display: none;
+  margin-left: 0.5em;
+}
+
+#welcome{
+    color:whitesmoke;
+    margin-left:2em;
+   
+  
+}
+
+/* sideNav */
+
+.sidenav{
+  
+  height: 100vh !important;
+  width:250px;
+  position:fixed;
+  background-color:#3f3f42;
+  display: none;
+  z-index:100!important;
+}
+
+.sidenav ul{
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  list-style: none !important;
+}
+
+.sidenav ul li {
+  margin:0.5em 0em;
+}
+
+.sidenav ul li a{
+  color:whitesmoke;
+}
+
+#sidenavCross{
+  height: 2em;
+  width: 2em;
+  margin:1em 0 0 1em;
+}
+
+.nav-items ul {
+ 
+  display: flex;
+  gap: 3rem;
+  list-style: none !important;
+}
+
+.nav-items ul li a {
+  color:whitesmoke;
+  
+}
+
+
+
+/* header intro */
+
+
+.header-intro{ 
+  width: fit-content;
+  position: relative;
+  top: 50%;
+  left:10%;
+  /* margin-top:15em; */
+  color:whitesmoke;
+}
+
+
+/* ANout me  */
+.about_me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin:5%;
+ 
+}
+
+.details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* flex-direction: column; */
+  gap:4em;
+  width: 80%;
+
+}
+
+
+
+#myImage{
+  width:22vw;
+  flex: 1;
+}
+.progress_bars{
+  width: 60vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:2em;
+  background-color:rgb(156, 102, 21);
+}
+
+.SocialMedia {
+  margin-top: 5%;
+ display: flex;
+ gap: 2em;
+
+}
+.SocialMedia a img{
+  height:2em;
+
+}
+
+.scroll {
+  background-color:#3f3f42;
+  box-shadow: 4px 0px 10px black;
+  z-index: 100;
+}
+
+/* media query section */
+
+@media screen and (max-width:700px){
+
+  .header-intro{
+    position: relative;
+    left: 10%;
+
+  }
+
+  #hamBurger{
+    display:initial;
+    margin: 0 1em;
+  }
+
+  .nav-items{
+    display: none;
+  }
+  nav{
+    /* padding-left:1em; */
+  }
+  #welcome{
+     margin-left:0.5em;
+  }
+
+  .details{
+    flex-wrap: wrap;
+  }
+  
+}
+
