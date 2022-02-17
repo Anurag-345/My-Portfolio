@@ -12,12 +12,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Lobster&family=Mochiy+Pop+P+One&family=Oswald:wght@300&family=Petemoss&family=Roboto+Slab:wght@300&family=Titillium+Web&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
 
     <!-- boootsrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" href="CSS/index.css">
+    
 </head>
 
 <body>
@@ -26,17 +28,6 @@
         <!-- nav-bar start -->
         <header class="container-fluid">
 
-            <!-- side nav -->
-            <div class="sidenav">
-                <img id="sidenavCross" src="images/cross.png">
-                <hr>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">RESUME</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                </ul>
-            </div>
 
             <nav id="nav">
 
@@ -50,9 +41,10 @@
                 <div class="nav-items me-5">
                     <ul>
                         <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
                         <li><a href="#">RESUME</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#contactdiv">CONTACT</a></li>
                     </ul>
                 </div>
             </nav>
@@ -64,15 +56,19 @@
 
             <div class=" header-intro">
                 <h3>Hi there!</h3>
-                <h1><span style="color: yellow;">I'm</span> <span style="font-weight:bold; ">Front-end developer
-                        |</span></h1>
-                <p></p>
+                <h1 class="Animated_text"><span style="color:yellow">I'm</span>
+                    <span class="txt-rotate" data-period="2000"
+                        data-rotate='[ "Front-end developer"]'></span>
+                </h1>
+                
                 <p>I Am a fresher. Creating UI is my forte.</p>
                 <div class="SocialMedia">
-                    <a href="#"><img src="images/facebook-xxl.png"></a>
-                    <a href="#"><img src="images/whatsapp-xxl.png"></a>
-                    <a href="#"><img src="images/linkedin-xxl.png"></a>
-                    <a href="#"><img src="images/new-instagram.png"></a>
+                    <a href="https://www.facebook.com/anurag.nayak.106" target="_"><img
+                            src="images/facebook-xxl.png"></a>
+                    <a href="https://wa.me/+916261260397" target="_"><img src="images/whatsapp-xxl.png"></a>
+                    <a href="https://www.linkedin.com/in/anurag-nayak-994604218/" target="_"><img
+                            src="images/linkedin-xxl.png"></a>
+                    <a href="https://www.instagram.com/anurag_n19/" target="_"><img src="images/new-instagram.png"></a>
 
                 </div>
 
@@ -86,7 +82,7 @@
 
 
     <!-- About me  -->
-    <div class="about_me">
+    <div class="about_me" id="about">
 
         <div class="details">
             <img id="myImage" src="images/Anurag-1.jpg">
@@ -117,8 +113,9 @@
 
     <!-- Projects -->
 
-    <div class="projects">
+    <div class="projects" id="projects">
 
+        <h1 class="heads">PROJECTS</h1>
         <div class="card-wrapper">
 
             <div class="card">
@@ -128,7 +125,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's
                         content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn">View on GitHub</a>
                 </div>
             </div>
 
@@ -139,7 +136,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's
                         content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn">View on GitHub</a>
                 </div>
             </div>
 
@@ -150,7 +147,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's
                         content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn">View on GitHub</a>
                 </div>
             </div>
 
@@ -161,7 +158,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's
                         content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn">View on GitHub</a>
                 </div>
             </div>
 
@@ -172,7 +169,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's
                         content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn">View on GitHub</a>
                 </div>
             </div>
 
@@ -183,7 +180,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's
                         content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn">View on GitHub</a>
                 </div>
             </div>
 
@@ -191,14 +188,170 @@
 
     </div>
 
+
+    <!-- contact section -->
+
+    <div class="contact" id="contactdiv">
+      
+        <h1 class="heads" >CONTACT </h1>
+
+        <div class="container d-flex justify-content-center">
+            <div class="row contact-wrapper">
+                    <form class="contact_form" action="https://formsubmit.co/anuragnayak345@gmail.com" method="POST">
+                        <input class="cont-Inputs" type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" class="cont-Inputs" name="email" placeholder="Enter your email" required>
+                        <input type="number" class="cont-Inputs" name="phone" placeholder="Enter your phone">
+                        <textarea name="message" class="cont-Inputs" placeholder="write your message..."></textarea>
+                        <input type="hidden" name="_next" value= "https://anurag-345.github.io/My-Portfolio/thanks.html">
+                        <button type="submit" class="btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Contact section end  -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo">
+
+        <!-- Footer Links -->
+        <div class="container">
+
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!">HOME</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#about">ABOUT</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#projects">PROJECTS</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!">RESUME</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!">CONTACT</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+            <hr class="rgba-white-light" style="margin: 0 15%;">
+
+            <!-- Grid row-->
+            <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+                <!-- Grid column -->
+                <div class="col-md-8 col-12 mt-3">
+                    <p style="line-height: 1.7rem">For any queries reach me out @ anuragnayak345@gmail.com</p>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+            <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+            <!-- Grid row-->
+            <div class="row pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-12">
+
+                    <div class=" flex-center d-flex justify-content-center">
+
+
+                        <div class="SocialMedia">
+                            <a href="https://www.facebook.com/anurag.nayak.106" target="_"><img
+                                    src="images/facebook-xxl.png"></a>
+                            <a href="https://wa.me/+916261260397" target="_"><img src="images/whatsapp-xxl.png"></a>
+                            <a href="https://www.linkedin.com/in/anurag-nayak-994604218/" target="_"><img
+                                    src="images/linkedin-xxl.png"></a>
+                            <a href="https://www.instagram.com/anurag_n19/" target="_"><img
+                                    src="images/new-instagram.png"></a>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2022 Copyright:
+            <a href="https://mdbootstrap.com/">Anurag nayak</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+    <!-- Footer end -->
+
+
+
+
+
     <script src="./JavaScript/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 </body>
 
 </html>
+
+
+
+<!-- side nav -->
+<!-- <div class="sidenav">
+                <img id="sidenavCross" src="images/cross.png">
+                <hr>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#">RESUME</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div> -->
+
+
+
+
+
 
 <!-- <div class="progress_bars">
     <h3>HTML</h3>
