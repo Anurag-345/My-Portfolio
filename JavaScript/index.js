@@ -43,11 +43,11 @@ ham.addEventListener("click", () => {
 
   const a4 = document.createElement("a");
   a4.innerHTML = "RESUME";
-  a4.setAttribute("href", "#contactdiv");
+  a4.setAttribute("href", "#!");
 
   const a5 = document.createElement("a");
   a5.innerHTML = "CONTACT";
-  a5.setAttribute("href", "#");
+  a5.setAttribute("href", "#contactdiv");
 
   li1.appendChild(a1);
   li2.appendChild(a2);
