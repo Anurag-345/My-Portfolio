@@ -27,7 +27,7 @@ ham.addEventListener("click", () => {
   const li2 = document.createElement("li");
   const li3 = document.createElement("li");
   const li4 = document.createElement("li");
-  const li5 = document.createElement("li");
+ 
 
   const a1 = document.createElement("a");
   a1.innerHTML = "HOME";
@@ -42,24 +42,19 @@ ham.addEventListener("click", () => {
   a3.setAttribute("href", "#projects");
 
   const a4 = document.createElement("a");
-  a4.innerHTML = "RESUME";
-  a4.setAttribute("href", "#!");
-
-  const a5 = document.createElement("a");
-  a5.innerHTML = "CONTACT";
-  a5.setAttribute("href", "#contactdiv");
+  a4.innerHTML = "CONTACT";
+  a4.setAttribute("href", "#contactdiv");
 
   li1.appendChild(a1);
   li2.appendChild(a2);
   li3.appendChild(a3);
   li4.appendChild(a4);
-  li5.appendChild(a5);
 
   ul.appendChild(li1);
   ul.appendChild(li2);
   ul.appendChild(li3);
   ul.appendChild(li4);
-  ul.appendChild(li5);
+ 
 
   sidenav.appendChild(cross);
   sidenav.appendChild(hr);
