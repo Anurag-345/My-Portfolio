@@ -19,15 +19,26 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" href="CSS/index.css">
-    
+
 </head>
 
 <body>
     <div>
+        <!-- side nav -->
+        <div class="sidenav">
+            <img id="sidenavCross" src="images/cross.png">
+            <hr>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#">RESUME</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
 
         <!-- nav-bar start -->
         <header class="container-fluid">
-
 
             <nav id="nav">
 
@@ -43,6 +54,7 @@
                         <li><a href="#">HOME</a></li>
                         <li><a href="#about">ABOUT</a></li>
                         <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#">RESUME</a></li>
                         <li><a href="#contactdiv">CONTACT</a></li>
                     </ul>
                 </div>
@@ -56,10 +68,9 @@
             <div class=" header-intro">
                 <h3>Hi there!</h3>
                 <h1 class="Animated_text"><span style="color:yellow">I'm</span>
-                    <span class="txt-rotate" data-period="2000"
-                        data-rotate='[ "Front-end developer"]'></span>
+                    <span class="txt-rotate" data-period="2000" data-rotate='[ "Front-end developer"]'></span>
                 </h1>
-                
+
                 <p>I Am a fresher. Creating UI is my forte.</p>
                 <div class="SocialMedia">
                     <a href="https://www.facebook.com/anurag.nayak.106" target="_"><img
@@ -190,22 +201,22 @@
     <!-- contact section -->
 
     <div class="contact" id="contactdiv">
-      
-        <h1 class="heads" >CONTACT </h1>
+
+        <h1 class="heads">CONTACT </h1>
 
         <div class="container d-flex justify-content-center">
             <div class="row contact-wrapper">
-                    <form class="contact_form" action="https://formsubmit.co/anuragnayak345@gmail.com" method="POST">
-                        <input class="cont-Inputs" type="text" name="name" placeholder="Enter your name" required>
-                        <input type="email" class="cont-Inputs" name="email" placeholder="Enter your email" required>
-                        <input type="number" class="cont-Inputs" name="phone" placeholder="Enter your phone">
-                        <textarea name="message" class="cont-Inputs" placeholder="write your message..."></textarea>
-                        <input type="hidden" name="_next" value= "https://anurag-345.github.io/My-Portfolio/thanks.html">
-                        <button type="submit" class="btn">Send</button>
-                    </form>
-                </div>
+                <form class="contact_form" action="https://formsubmit.co/anuragnayak345@gmail.com" method="POST">
+                    <input class="cont-Inputs" type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" class="cont-Inputs" name="email" placeholder="Enter your email" required>
+                    <input type="number" class="cont-Inputs" name="phone" placeholder="Enter your phone">
+                    <textarea name="message" class="cont-Inputs" placeholder="write your message..."></textarea>
+                    <input type="hidden" name="_next" value="https://anurag-345.github.io/My-Portfolio/thanks.html">
+                    <button type="submit" class="btn">Send</button>
+                </form>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Contact section end  -->
@@ -242,6 +253,12 @@
                     </h6>
                 </div>
                 <!-- Grid column -->
+
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#about">RESUME</a>
+                    </h6>
+                </div>
 
                 <!-- Grid column -->
                 <div class="col-md-2 mb-3">
@@ -327,18 +344,7 @@
 
 
 
-<!-- side nav -->
-<!-- <div class="sidenav">
-                <img id="sidenavCross" src="images/cross.png">
-                <hr>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#">RESUME</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </div> -->
+
 
 
 <!-- <div class="progress_bars">

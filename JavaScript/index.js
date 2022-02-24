@@ -1,67 +1,35 @@
 const ham = document.getElementById("hamBurger");
 
-var myNav = document.getElementById("nav");
+const myNav = document.getElementById("nav");
 
-const sidenav_container = document.querySelector(".container-fluid");
+const sideNav = document.querySelector(".sidenav");
+
+const sidenavClose = document.getElementById("sidenavCross");
+
 
 ham.addEventListener("click", () => {
-  const sidenav = document.createElement("div");
-  sidenav.setAttribute("class", "sidenav");
- 
-  // sidenav.style.visibility = "visible";
+  
+  sideNav.classList.add('sideNav_appear');
+  myNav.classList.add('hideTopNav');
+  
+});
 
-  const cross = document.createElement("img");
-  cross.setAttribute("id", "sidenavCross");
-  cross.setAttribute("src", "images/cross.png");
 
-  cross.addEventListener("click", () => {
-    sidenav.style.display = "none";
-    myNav.style.display = "flex";
-  });
+sidenavClose.addEventListener('click',() =>{
 
-  const hr = document.createElement("hr");
+  sideNav.classList.remove("sideNav_appear");
+  myNav.classList.remove("hideTopNav");
+  
+})
 
-  const ul = document.createElement("ul");
+document.addEventListener('mouseup', (event)=>{
+  if(event.target != sideNav){
 
-  const li1 = document.createElement("li");
-  const li2 = document.createElement("li");
-  const li3 = document.createElement("li");
-  const li4 = document.createElement("li");
- 
+    sideNav.classList.remove("sideNav_appear");
+    myNav.classList.remove("hideTopNav");
 
-  const a1 = document.createElement("a");
-  a1.innerHTML = "HOME";
-  a1.setAttribute("href", "#");
+  }
 
-  const a2 = document.createElement("a");
-  a2.innerHTML = "ABOUT";
-  a2.setAttribute("href", "#about");
-
-  const a3 = document.createElement("a");
-  a3.innerHTML = "PROJECTS";
-  a3.setAttribute("href", "#projects");
-
-  const a4 = document.createElement("a");
-  a4.innerHTML = "CONTACT";
-  a4.setAttribute("href", "#contactdiv");
-
-  li1.appendChild(a1);
-  li2.appendChild(a2);
-  li3.appendChild(a3);
-  li4.appendChild(a4);
-
-  ul.appendChild(li1);
-  ul.appendChild(li2);
-  ul.appendChild(li3);
-  ul.appendChild(li4);
- 
-
-  sidenav.appendChild(cross);
-  sidenav.appendChild(hr);
-  sidenav.appendChild(ul);
-
-  myNav.style.display = "none";
-  sidenav_container.appendChild(sidenav);
 });
 
 // chnaging navbar color when scroll
@@ -77,11 +45,6 @@ window.onscroll = function () {
     myNav.classList.remove("scroll");
   }
 };
-
-
-
-
-
 
 // text animation 
 
@@ -142,4 +105,7 @@ window.onload = function () {
   css.type = "text/css";
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
-};
+}
+
+// https://codepen.io/mendieta/pen/WgvENJ
+

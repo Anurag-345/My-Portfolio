@@ -43,6 +43,10 @@ a{
   width:fit-content;
 }
 
+.btn:hover{
+  color:white;
+}
+
 .Animated_text{
   font-weight: 200;
   margin: 0.4em 0;
@@ -73,6 +77,13 @@ nav {
   top:0;
   
 }
+
+.hideTopNav{
+
+  position:fixed;
+  top:-5em;
+}
+
 .nav-head{
   display:flex;
 }
@@ -95,6 +106,7 @@ nav {
   display: flex;
   gap: 3rem;
   list-style: none !important;
+ 
 }
 
 .nav-items ul li a{
@@ -109,20 +121,29 @@ nav {
 }
 
 
+
+
 /* sideNav */
 
 .sidenav{
   
   height: 100vh !important;
   width:250px;
-  top:0;
   position:fixed;
+  top:0;
+  left:-255px;
   background-color:#3f3f42;
   box-shadow: 1px 0px 3px black;
   /* display: none; */
   z-index:100!important;
+  transition: 0.3s ease-in-out;
 }
-
+.sideNav_appear{
+  position: fixed;
+  top:0;
+  left:0;
+  transition: 0.3s ease-in-out;
+}
 
 .sidenav ul{
   display: flex;
@@ -150,12 +171,7 @@ nav {
   margin:1em 0 0 1em;
 }
 
-
-
-
-
 /* header intro */
-
 
 .header-intro{ 
   width: fit-content;
@@ -167,7 +183,7 @@ nav {
 }
 
 
-/* ANout me  */
+/* About me  */
 .about_me{
   display: flex;
   justify-content: center;
@@ -192,7 +208,7 @@ nav {
 
 
 #myImage{
-  width:22vw;
+  width:250px;
   flex: 1;
 }
 .progress_bars{
@@ -221,7 +237,7 @@ nav {
   background-color:#3f3f42;
   box-shadow: 4px 0px 10px black;
   z-index: 100;
-  transition: 0.5s ease-out;
+  transition: 0.3s ease-out;
 }
 
 /* media query section */
@@ -289,10 +305,11 @@ nav {
 }
 
 .cont-Inputs{
+  background-color: transparent;
   width:100%;
   padding: 5px;
-  border-radius:5px;
-  border: 1px solid black;
+  border: none;
+  border-bottom: 3px solid #6e6e6e;
 }
 
 
@@ -304,6 +321,7 @@ nav {
   color:white
 }
 
+
 @media screen and (max-width:800px){
 
   .header-intro{
@@ -314,7 +332,7 @@ nav {
 
   #hamBurger{
     display:initial;
-    margin: 0 1em;
+    margin: 0 0 0 1em;
   }
 
   .nav-items{
@@ -337,4 +355,6 @@ nav {
   
   
 }
+
+
 
