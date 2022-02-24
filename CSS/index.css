@@ -97,7 +97,6 @@ nav {
 #welcome{
     color:whitesmoke;
     margin-left:2em;
-   
   
 }
 
@@ -106,7 +105,6 @@ nav {
   display: flex;
   gap: 3rem;
   list-style: none !important;
- 
 }
 
 .nav-items ul li a{
@@ -117,7 +115,7 @@ nav {
 .nav-items ul li a:hover{
   color:yellow;
   border-bottom:3px solid var(--dec-color);
-  transition:0.1s ease-in;
+  transition:0.1s ease-in-out;
 }
 
 
