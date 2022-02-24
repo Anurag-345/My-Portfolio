@@ -336,9 +336,7 @@ nav {
   .nav-items{
     display: none;
   }
-  nav{
-    /* padding-left:1em; */
-  }
+  
   #welcome{
      margin-left:0.5em;
   }
